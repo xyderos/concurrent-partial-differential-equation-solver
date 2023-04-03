@@ -19,6 +19,9 @@ jobs:
       
       - name: Install valgrind
         run: sudo apt install -y valgrind
+
+      - name: Install open MP
+        run: sudo apt install -y libomp-dev
       
       - name: Export path to LD_LIBRARY_PATH
         run: echo "LD_LIBRARY_PATH=$(pwd)" >> $GITHUB_ENV
